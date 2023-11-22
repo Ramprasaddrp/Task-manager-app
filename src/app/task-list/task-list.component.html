@@ -1,0 +1,28 @@
+<div *ngIf="tasks.length !== 0" >
+    <div *ngFor="let task of tasks" class="list-of-tasks">
+        <div class="card">
+            <div class="title">
+                <div  *ngIf="!editor then thentitle else elseinput"></div>
+                <ng-template  #thentitle>{{task.title}}</ng-template>
+                <ng-template #elseinput><input type="text" [(ngModel)]="task.title" value="{{task.title}}" (change)="onChangeTitle(task.title)"/></ng-template>
+            </div>
+            <div class="description">  
+                <div *ngIf="!editor then thendescription else elsedescription"></div>
+                <ng-template #thendescription>{{task.description}}</ng-template>
+                <ng-template #elsedescription><input type="text" [(ngModel)]="task.description" value="{{task.description}}" (change)="onChangeDescription(task.description)"/></ng-template>
+            </div> 
+            <div class="check">
+                <input type="checkbox" [checked]="task.completed" (click)="onUpdateStatus(task.id)"/>
+                <div class="description" *ngIf="task.completed then thenBlock else elseBlock"></div>
+                <ng-template #thenBlock>Task completed</ng-template>
+                <ng-template #elseBlock>Task not Completed</ng-template>
+            </div> 
+            <div class="buttons">
+                <button class="btn1" (click)="editDetails(task.id)">{{editor?"save":"edit"}}</button>
+                <button class="btn2" (click)="onClickDelete(task.id)">delete</button>
+            </div>
+        </div>
+    </div>
+</div>  
+
+ 

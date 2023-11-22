@@ -1,0 +1,56 @@
+.list-of-tasks{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.card{
+    border: 1px solid rgb(72, 71, 71);
+    border-radius: 10px;
+    width: 50vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 20px;
+    font-family: 'Courier New';
+
+}
+.title{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+}
+.description{
+    font-size: 20px;
+    padding: 20px;
+}
+.check{
+    padding: 20px;
+}
+.buttons{
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+.btn1{
+    background-color: rgb(39, 243, 8);
+    padding:8px 15px 8px 15px;
+    font-size: 20px;
+    
+}
+
+.btn2{
+    background-color: red;
+    padding:8px 15px 8px 15px;
+    font-size: 20px;
+    
+}

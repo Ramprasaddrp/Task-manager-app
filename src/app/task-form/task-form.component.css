@@ -1,0 +1,54 @@
+.creat-task-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px gray;
+    width: 40vw;
+    margin: auto;
+}
+
+.creat-task-form{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-family:  "Concert one", cursive;
+    font-weight: bold;
+    color: #26597b;
+    font-size: 50px;
+}
+label{
+    font-family: "roboto";
+    font-size: 20px;
+    color: rgb(59, 2, 2);
+    margin-bottom: 10px;
+}
+input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.dicription{
+    font-family: "Roboto";
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    outline: none;
+}
+button{
+    width: 200px;
+    align-self: center;
+    margin: 20px;
+    padding: 8px 15px 8px 15px;
+    background-color: rgb(27, 184, 228);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 20px;
+}
